@@ -9,12 +9,16 @@
 Решите через рекурсию. Решение через цикл не принимается.
 Для оценки Отлично в этом блоке необходимо выполнить 5 заданий из 7
 """
-def summ(n,e=1,s=0):
+def summ(common_sum, number , i , n_count):
+    if i == n_count :
+        return f'Количество элементов - {n_count} , их сумма - {common_sum}'
+    else :
+        return summ(i + 1, number /2 * -1, n_count, common_sum + number)
+
+try:
+    N_COUNT = int(input('Введите количество элементов : '))
+    summ(0 , 1 , 0 , N_COUNT)
+except ValueError:
+    print('Вы ввели строку вместо чисел ')
 
 
-    for i in range(n):
-        s += e
-        e /= -2
-    print(s)
-
-summ(n=int(input('Введите количество элементов : ')))

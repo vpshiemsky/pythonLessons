@@ -15,32 +15,18 @@
 Для оценки Отлично в этом блоке необходимо выполнить 5 заданий из 7
 """
 
-# Вот два варианта, но есть проблема : я долго думал и в итоге не понял , как срезать
-#последнюю цифру числа? (number = number // 10)
-#1)
+
+
+
 def even_odd_counting(number, even=0, odd=0):
     if number == 0:
-        even = 1
-        return f' Четных - {even}'
+        return f' Четных - {even}, Нечетных - {odd}'
     else:
-        if number % 2 == 0:
-            even += 1
-            return f'Четных - {even}'
+        now_n= number % 10
+        number = number // 10
+        if now_n % 2 ==0:
+            even +=1
         else:
-            odd += 1
-            return f'Нечетных - {odd}'
-print(even_odd_counting(101))
+            odd +=1
+        return even_odd_counting()
 
-#2)
-def even_odd_counting(number, even=0, odd=0):
-    if number == 0:
-        even = 1
-        return f' Четных - {even}'
-    elif number % 2 == 0:
-        even += 1
-        return f'Четных - {even}'
-    else:
-        odd += 1
-        return f'Нечетных - {odd}'
-
-print(even_odd_counting(101))

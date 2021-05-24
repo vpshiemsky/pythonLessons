@@ -9,15 +9,20 @@
 Решите через рекурсию. Решение через цикл не принимается.
 Для оценки Отлично в этом блоке необходимо выполнить 5 заданий из 7
 """
-#сделал только для 1 попытки , подскажите ,пожалуйста, как сделать , чтобы было больше 1
-from random import random
-def guess(n=round(random() * 100),number =int(input())):
-    if number == n:
-        return f'Верно '
-    else:
-        if number > n :
-            return f'Много '
-        else:
-            return f'Мало '
 
-print(guess())
+import random
+def guess(count, number):
+    print(f'Попытка №{count} ')
+    answer = int(input('Введите число от 0 до 100 : '))
+    if count == 10 or answer == number:
+        if answer == number:
+            print('Верно ')
+        print(f'Загаданное число : {number}')
+    else :
+        if answer > number :
+            print(f'Много ')
+        else :
+            print(f'Мало ')
+        guess(count + 1, number)
+
+guess(1,random.randint(0, 100))

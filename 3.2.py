@@ -17,12 +17,14 @@
 Решите через рекурсию. Решение через цикл не принимается.
 Для оценки Отлично в этом блоке необходимо выполнить 5 заданий из 7
 """
-# та же самая проблема со срезом числа
-def numbers(number, a=0):
-    if number == 0:
-        return 0
-    else:
-        a = a * 10 + number % 10
-        number=number // 10
 
-print(numbers(123))
+def revers(numb):
+    rest_numb , numeral = divmod (numb,10)
+    if rest_numb == 0 :
+        return str(numeral)
+    else :
+        return str(numeral) + str(revers(rest_numb))
+
+nuber = int(input('Введите число : '))
+print(f'Перевернутое число : {revers(nuber)}')
+
