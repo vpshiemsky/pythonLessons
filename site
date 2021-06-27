@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="abs">
+    <h2 class="height_2">Contact us</h2>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        quibusdam earum aliquid laborum quasi. Ipsam eum magnam vero nostru
+        m cumque perspiciatis! Quam accusantium quidem ullam fuga nam doloremque, a quod.</p>
+
+    <h1 class="height_1">Контакты</h1>
+
+    <a href="contacts.html">Контакты</a>
+
+    <a href="main.html">Главная</a>
+
+    
+
+    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, debitis.</p>
+
+    <img src="photo/peizaji-27-min.jpg" alt="photo">
+
+    <h4 class="height_4">Adress</h4>
+
+    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+    <h4 class="height_4">Phone</h4>
+
+    <ul>
+        <li>89587804430</li>
+        <li>89995641256</li>
+    </ul>
+    <h4 class="height_4">Online service</h4>
+
+    <a href="mailto:vlad@htmlbook.ru">vlad@htmlbook.ru</a>
+
+    <a href="tel:89587804430">89587804430</a>
+
+    <h4 class="height_4">Send us message</h4>
+
+    <form action="#">
+
+        Full name <input type="text" placeholder="Евгений" class="vvod"> <br> <br>
+        Email <input type="email" placeholder="mail@mail.ru" class="vvod"> <br> <br>
+        Message <textarea cols="30" rows="5" placeholder="Message" class="vvod"></textarea> <br> <br>
+        <button type="submit" class="button">Отправить</button>
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad499bea090edb5dcbb828d06e10ef48b2e48d689b778a8ec5c64bd03c7f9c016&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        <h3 class="height_3">Lorem, ipsum dolor.</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, minima!</p>
+        <hr>
+        <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>Телефон : 89992134576</li>
+            <li>Почта : support@mail.ru</li>
+        </ul>
+        <p class="paragraph">Все права защищены &copy;</p>
+    </form>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Главная</h1>
+    <a href="contacts.html">Контакты</a>
+    <a href="main.html">Главная</a>
+</body>
+
+</html>
+.abs {
+    font-family: sans-serif;
+}
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+.height_1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+.height_2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+.height_3 {
+    font-size: 36px;
+    text-align: center;
+}
+.height_4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+.vvod {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+.button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
